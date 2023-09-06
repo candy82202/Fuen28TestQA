@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXAM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/Flip.css" />
+  </head>
+  <body>
+    <img class="fixed-image" src="./images/coding.jpg" alt="fixed-image" />
+    <header>
+      <section class="logo">
+        <img src="./images/Csharp.svg" alt="C# Logo" />
+        <h1>FUEN28 Test</h1>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="exam.html"
+              ><img
+                src="node_modules/bootstrap-icons/icons/hdd-stack.svg"
+                alt=""
+              />題庫</a
+            >
+          </li>
+
+          <li><a href="test.html#/randomquiz">隨機測驗</a></li>
+          <li><a href="exam.html">類別測驗</a></li>
+          <li>
+            <a href="#">
+              <i
+                class="fa-sharp fa-solid fa-right-to-bracket"
+                style="color: #1c3a6d"
+              ></i
+              >會員登入</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-book-user"></i>聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="background-img">
+        <div class="filter"></div>
+        <h3>FUEN28 全端班<br />帶你轉職成為全端工程師！</h3>
+      </section>
+      <div id="app">
+        <section class="h-100 route">
+          <div class="container">
+            <div class="section-header">
+              <div class="mb-4"></div>
+            </div>
+
+            <ul
+              class="nav nav-tabs d-flex justify-content-center mb-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <li class="nav-item m-1">
+                <router-link class="nav-link" to="/oop">
+                  <h4>物件導向</h4>
+                </router-link>
+              </li>
+              <li class="nav-item m-1">
+                <router-link class="nav-link" to="/database">
+                  <h4>資料庫</h4>
+                </router-link>
+              </li>
+              <!-- End tab nav item -->
+              <li class="nav-item m-1">
+                <router-link class="nav-link" to="/cSharp">
+                  <h4>C#</h4>
+                </router-link>
+              </li>
+              <li class="nav-item m-1">
+                <router-link class="nav-link" to="/git">
+                  <h4>Git</h4>
+                </router-link>
+              </li>
+
+              <!-- End tab nav item -->
+              <li class="nav-item m-1">
+                <router-link
+                  class="nav-link"
+                  to="/"
+                  style="color: var(--color-text)"
+                  ><h4>前端</h4></router-link
+                >
+              </li>
+              <!-- <li class="nav-item m-1">
+              <router-link
+                class="nav-link"
+                to="/choco"
+                style="color: var(--color-text)"
+                ><h4>巧克力大賞</h4></router-link
+              >
+            </li> -->
+              <!-- End tab nav item -->
+            </ul>
+
+            <!-- Router View Here -->
+          </div>
+        </section>
+        <!-- End Menu Section -->
+        <section class="info-circles">
+          <div class="container">
+            <div class="row">
+              <router-view></router-view>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="empty-container">
+        <h3>今天就開始規劃課程找到最適合的方案。</h3>
+      </section>
+    </main>
+    <footer>
+      <section class="logo">
+        <img src="./images/Csharp.svg" alt="日本旅遊網Logo" />
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <h3>面試考題</h3>
+        </div>
+      </section>
+      <section class="links">
+        <a href=""><img src="./Icons/facebook.svg" alt="facebook" /></a>
+        <a href=""><img src="./Icons/instagram.svg" alt="instagram" /></a>
+        <a href=""><img src="./Icons/twitter.svg" alt="twitter" /></a>
+        <a href=""><img src="./Icons/youtube.svg" alt="youtube" /></a>
+      </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="/js/variables.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- vue and vue Router -->
+    <script src="https://unpkg.com/vue@3.3.4/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue-router@4.2.4/dist/vue-router.global.js"></script>
+    <script src="/js/oop.js"></script>
+    <script src="/js/database.js"></script>
+    <script src="/js/cSharp.js"></script>
+    <script src="js/git.js"></script>
+    <script src="js/qa.js"></script>
+    <script src="js/randomquiz.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+      // var app = {
+      //   data() {
+      //     return {
+      //       questions: [],
+      //     };
+      //   },
+      //   methods: {
+      //     async refreshData() {
+      //       try {
+      //         const response = await axios.get(
+      //           `${variables.API_URL}Question?titleId=1`
+      //         );
+      //         this.questions = response.data; // Assign the fetched question data
+      //         console.log(this.questions);
+      //       } catch (error) {
+      //         console.error("Error fetching question:", error);
+      //       }
+      //     },
+      //     async csharpData() {
+      //       try {
+      //         const response = await axios.get(
+      //           `${variables.API_URL}Question?titleId=1`
+      //         );
+      //         this.questions = response.data; // Assign the fetched question data
+      //         console.log(this.questions);
+      //       } catch (error) {
+      //         console.error("Error fetching question:", error);
+      //       }
+      //     },
+      //     async fetchQuestions(titleId) {
+      //       try {
+      //         const response = await axios.get(
+      //           `${variables.API_URL}Question?titleId=${titleId}`
+      //         );
+      //         this.questions = response.data;
+      //         console.log(this.questions);
+      //       } catch (error) {
+      //         console.error("Error fetching questions:", error);
+      //       }
+      //     },
+      //   },
+      //   watch: {
+      //     "$route.params.titleId": "fetchQuestions",
+      //   },
+      //   created() {
+      //     this.fetchQuestions(this.$route.params.titleId);
+      //   },
+      //   mounted: function () {
+      //     console.log("發送");
+      //     this.refreshData();
+      //   },
+      // };
+      // var app = Vue.createApp(app).mount("#app");
+    </script>
+  </body>
+</html>

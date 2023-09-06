@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUEN28 Test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+      integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <img class="fixed-image" src="./images/coding.jpg" alt="fixed-image" />
+    <header>
+      <section class="logo">
+        <img src="./images/Csharp.svg" alt="C# Logo" />
+        <a href="index.html" class="text-decoration-none">
+          <h1 class="text-dark">FUEN28 Test</h1></a
+        >
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="exam.html"
+              ><img
+                src="node_modules/bootstrap-icons/icons/hdd-stack.svg"
+                alt=""
+              />題庫</a
+            >
+          </li>
+
+          <li><a href="test.html#/randomquiz">隨機測驗</a></li>
+          <li><a href="exam.html">類別測驗</a></li>
+          <li>
+            <a href="#">
+              <i
+                class="fa-sharp fa-solid fa-right-to-bracket"
+                style="color: #1c3a6d"
+              ></i
+              >會員登入</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-book-user"></i>聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="background-img">
+        <div class="filter"></div>
+        <h3>FUEN28 全端班<br />帶你轉職成為全端工程師！</h3>
+      </section>
+      <section class="info-circles">
+        <h3>考題類型</h3>
+        <div class="circles">
+          <div class="circle">
+            <img title="oop" src="./images/concepts-oop.png" alt="oop" />
+            <p>物件導向 (Object-Oriented)</p>
+          </div>
+          <div class="circle">
+            <img
+              title="SQL-Server"
+              src="./images/SQL-Server.png"
+              alt="SQL-Server"
+            />
+            <p>資料庫 (Database)</p>
+          </div>
+          <div class="circle">
+            <img title="Csharp" src="./images/Csharp.svg" alt="Csharp" />
+            <p>C#</p>
+          </div>
+          <div class="circle">
+            <img title="清水寺" src="./images/front-end.jpg" alt="清水寺" />
+            <p>前端</p>
+          </div>
+        </div>
+      </section>
+      <section class="empty-container">
+        <h3>今天就開始規劃課程找到最適合的方案。</h3>
+      </section>
+      <section class="google-map">
+        <h3>上課地理位置</h3>
+        <p>跨域人才就業養成 專業趨勢在職訓練</p>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.4378008942267!2d121.21959471200122!3d24.985235477755708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682183e7b783c3%3A0xf0ebfba2069b6158!2z6IGW5b635Z-6552j5a246Zmi!5e0!3m2!1szh-TW!2stw!4v1693365186444!5m2!1szh-TW!2stw"
+          width="800"
+          height="700"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+      <section class="logo">
+        <img src="./images/Csharp.svg" alt="日本旅遊網Logo" />
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <h3>面試考題</h3>
+        </div>
+      </section>
+      <section class="links">
+        <a href=""><img src="./Icons/facebook.svg" alt="facebook" /></a>
+        <a href=""><img src="./Icons/instagram.svg" alt="instagram" /></a>
+        <a href=""><img src="./Icons/twitter.svg" alt="twitter" /></a>
+        <a href=""><img src="./Icons/youtube.svg" alt="youtube" /></a>
+      </section>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="assets/js/variables.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"
+      integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- vue and vue Router -->
+    <script src="https://unpkg.com/vue@3.3.4/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue-router@4.2.4/dist/vue-router.global.js"></script>
+    <script>
+      setInterval(() => {
+        let topBackground = document.querySelector("section.background-img");
+        if (
+          topBackground.style.backgroundImage ==
+          'url("../images/concepts-oop.png")'
+        ) {
+          topBackground.style.backgroundImage = 'url("../images/CSharp.jpg")';
+        } else if (
+          topBackground.style.backgroundImage == 'url("../images/CSharp.jpg")'
+        ) {
+          topBackground.style.backgroundImage =
+            'url("../images/front-end.jpg")';
+        }
+        //else if (
+        //   topBackground.style.backgroundImage ==
+        //   'url("../images/front-end.jpg")'
+        // ) {
+        //   topBackground.style.backgroundImage =
+        //     'url("../images/SQL-Server.png")';
+        // }
+        else {
+          topBackground.style.backgroundImage =
+            'url("../images/concepts-oop.png")';
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>
